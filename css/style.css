@@ -1,0 +1,359 @@
+/***FONT SIZING***
+http://type-scale.com/?size=16&scale=1.125&text=A%20Visual%20Type%20Scale&webfont=%27PT+Sans%27&font-family=%27PT%20Sans%27,%20sans-serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=
+***/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Serif', Georgia, Palatino, 'Palatino Linotype', serif;
+  font-size: 1em; /*16px*/
+  line-height: 1.5;
+  color: #5E5E5E;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+  color: #4A4A4A;
+  margin: 0;
+}
+
+h1 {
+  padding: 1em 0 1em;
+  font-size: 1.602em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding-bottom: 3em;
+  letter-spacing: .01em;
+  color: #2572AA;
+}
+
+h3 {
+  font-size: 1.266em;
+  line-height: 1.3;
+}
+
+header {
+  padding-bottom: 2.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-bottom: 2.5em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  background-color: #fefefe;
+  margin-bottom: 0.3em;
+}
+
+nav ul li a {
+  display: block;
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  text-decoration: none;
+  padding: 0.5em;
+  transition: all 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #4A4A4A;
+  color: #FAFAFA;
+}
+
+.banner {
+  width: 88%;
+  margin: 0 auto;
+}
+
+/* .profile-pic {
+  margin: 0;
+} */
+
+main {
+  background-color: #FAFAFA;
+  padding-bottom: 1.5em;
+}
+
+#portfolio,
+#skills {
+  padding-top: 3em;
+}
+
+.project {
+  margin-bottom: 1.5em;
+}
+
+.project img {
+  margin-bottom: 1.5em;
+}
+
+.project p {
+  margin-top: 0.5em;
+  margin-bottom: 2.3em;
+  padding: 0 2em;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 4em;
+}
+
+.skills {
+  margin: 0 1.5625em;
+  padding: 0;
+}
+
+.skills li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #444;
+  background-color: #333;
+  box-shadow: 3px 2px 3px #cdcdcd;
+  color: #fff;
+  text-shadow: 0 -1px 0 #565656;
+  padding: 1em;
+  width: 80%;
+  font-size: 1.266em;
+  margin-bottom: 0.3em;
+}
+
+.skills li:hover {
+  opacity: 0.9;
+}
+
+.skills i {
+  padding-right: 0.5em;
+}
+
+footer {
+  margin-top: 4em;
+}
+
+#contact h2 {
+  padding-bottom: 1em;
+}
+
+address {
+  font-style: normal;
+  padding-bottom: 4em;
+}
+
+address span {
+  font-weight: 700;
+  padding-left: 0.5em;
+}
+
+address span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address span a:hover {
+  border-bottom: 2px solid #626F7E;
+  color: #626F7E;
+}
+
+.credit {
+  border-top: 1px solid #DCDCDC;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em 1em;
+  font-size: 0.889em;
+  font-weight: 700;
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+}
+
+.credit p {
+  float: left;
+  color: #9b9c9c;
+}
+
+.credit p + p {
+  float: right;
+  text-transform: uppercase;
+}
+
+.credit p a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5em;
+  transition: all 0.2s;
+}
+
+.credit p a:hover {
+  background-color: #5E5E5E;
+  color: #FAFAFA;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.clearfix {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/*************
+MEDIA QUERIES
+*************/
+
+/*** TABLET STYLES ***/
+@media (min-width: 768px) {
+
+  nav ul {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    float: left;
+    background-color: transparent;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    padding: 1em 1.5em;
+  }
+
+  .profile-pic {
+    float: right;
+    width: 33%;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .intro {
+    float: left;
+    width: 67%;
+    margin-top: 0;
+    padding: 0 1em;
+    font-size: 1.125em;
+    text-align: left;
+  }
+
+  .project {
+    float: left;
+    width: 50%;
+    padding: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .project p {
+    /* keep height of this element consistent */
+    height: 3.75em;
+  }
+
+
+  .skills li {
+    float: left;
+    width: 25%;
+  }
+
+  .get-in-touch {
+    font-size: 1.266em;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .credit p a {
+    display: none;
+  }
+
+  footer {
+    padding-bottom: 2em;
+    width: 100%;
+  }
+
+  .footer-nav {
+    display: block;
+    text-align: right;
+  }
+
+  .footer-nav ul li a {
+    color: #9b9c9c;
+  }
+
+  .footer-nav ul li a:hover {
+    background-color: #9b9c9c;
+    color: #FAFAFA;
+  }
+
+}
+
+
+/*** DESKTOP STYLES ***/
+@media (min-width: 1024px) {
+
+  .main-header {
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+    min-height: 3.125rem;
+  }
+
+  .logo {
+    float: left;
+    padding: 1rem 0;
+  }
+
+  .main-nav {
+    float: right;
+    margin-right: 24px;
+  }
+
+  .intro {
+    font-size: 1.424em;
+    width: 60%;
+    padding-right: 6rem;
+    padding-left: 0;
+  }
+
+  .profile-pic {
+    width: 40%;
+    padding-right: 24px;
+  }
+
+  .project {
+    width: 33%;
+    padding: 0.5em;
+  }
+
+  .get-in-touch {
+    width: 50%;
+  }
+
+  footer {
+    padding-bottom: 0;
+  }
+
+}
